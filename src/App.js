@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/Navbar';
+import BMICal from './components/BMICal';
+import TextForm from './components/TextForm';
+import About from './components/About';
+import Home from './components/Home';
+import {Routes,Route,BrowserRouter}from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar Home="Home " About=" About "TextForm="TextForm" BMICal="BMICal" ></Navbar>
+    <Routes>
+      <Route path="/Home" element={<Home></Home>}></Route>
+      <Route path="/About" element={<About></About>}></Route>
+      <Route path="/TextForm" element={<TextForm></TextForm>}></Route>
+      <Route path="/BMICal" element={<BMICal></BMICal>}></Route>
+    </Routes>
+    </>
+     
+     
   );
 }
 
