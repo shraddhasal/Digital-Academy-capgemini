@@ -9,12 +9,11 @@ import {Routes,Route,BrowserRouter}from 'react-router-dom';
 function App() {
   return (
     <>
-    <Navbar Home="Home " About=" About "TextForm="TextForm" BMICal="BMICal" ></Navbar>
+    <Navbar Home="Home " About=" About "TextForm="TextForm"  ></Navbar>
     <Routes>
       <Route path="/Home" element={<Home></Home>}></Route>
       <Route path="/About" element={<About></About>}></Route>
       <Route path="/TextForm" element={<TextForm></TextForm>}></Route>
-      <Route path="/BMICal" element={<BMICal></BMICal>}></Route>
     </Routes>
     </>
      
