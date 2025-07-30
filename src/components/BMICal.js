@@ -14,7 +14,7 @@ export default function BMICal() {
         }
         let calbmi=(e)=>{
             e.preventDefault();
-            if(weight==0 || height==0){
+            if(weight===0 || height===0){
                 alert('Please enter a valid height and weight')
             }else{
                 let bmi=(weight/(height*height)*703)
